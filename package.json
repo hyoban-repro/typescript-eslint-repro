@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint one.js two.js"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^1.6.1",

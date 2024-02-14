@@ -7,5 +7,8 @@ import stylistic from "@stylistic/eslint-plugin"
 export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-  stylistic.configs["recommended-flat"],
+  {
+    ...stylistic.configs["recommended-flat"],
+    files: [(file) => file.endsWith("one.js")],
+  },
 )
